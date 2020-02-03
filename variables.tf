@@ -1,6 +1,6 @@
 variable "credentials" {
   description = "Descrição"
-  default     = "/vagrant/turma03-infraagil-19-terraform.json"
+  default     = "turma03-infraagil-19-terraform.json"
 }
 
 variable "project" {
