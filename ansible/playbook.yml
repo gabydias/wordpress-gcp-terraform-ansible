@@ -49,14 +49,6 @@
       notify:
         - restart apache
 
-    - name: Configurando o Wordpress (Banco de Dados)
-      template:
-        src: /vagrant/wp-config.j2
-        dest: /var/www/wordpress/wp-config.php
-        owner: www-data
-        group: www-data
-        mode: '0644'
-
   handlers:
     - name: restart apache
       service:
